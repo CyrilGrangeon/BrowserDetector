@@ -6,56 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detecter le navigateur utilisé</title>
 
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-            box-sizing: border-box;
-            color: whitesmoke;
-
-}
-
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(14deg, black, darkred);
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-ul{
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-li{
-    list-style: none;
-    margin-left: 14px;
-
-}
-
-.container h1{
-color: blueviolet;
-font-size: 50px;
-
-}
-
-.isSelected{
-    color: turquoise;
-    text-shadow: 3px 3px 10px whitesmoke;
-}
-    </style>
-
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     
 </head>
 
@@ -78,30 +30,8 @@ font-size: 50px;
     </ul>
 </main>
 
-<script>
-    let userAgent=navigator.userAgent; //navigator est un objet qui contient des informations à propos du navigateur
-    //console.log(userAgent);
-    let browser;
-    if(userAgent.match(/edg/i)){
-browser="edge";
-    }else if(userAgent.match(/firefox|fxios/i)){
-browser="firefox";
-    }else if(userAgent.match(/opr/i)){
-browser="opera";
-    }else if(userAgent.match(/chrome|chromium|vrios/i)){
-browser="chrome";
-    }else if(userAgent.match(/safari/i)){
-browser="safari";
-    }else{
-        alert("La detection a échoué !!!")
-    }
 
-console.log(browser)
 
-const BROWSER = document.querySelector(`.${browser}`)
-BROWSER.classList.add("isSelected");
-
-</script>
 
 </body>
 </html>

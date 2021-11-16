@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: linear-gradient(14deg, black, darkred);
+}
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+ul{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+li{
+list-style: none;
+margin-left: 14px;
+
+}
+
+.container h1{
+color: blueviolet;
+font-size: 50px;
+
+}
+
+.isSelected{
+color: turquoise;
+text-shadow: 3px 3px 10px whitesmoke;
+}
